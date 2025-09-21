@@ -14,9 +14,9 @@ body {
     max-width: 100%;
     overflow-x: hidden;
     background-color: #212121;
-    background: radial-gradient(circle 400px at 43% 15%, rgba(0,100, 255, 0.2), transparent 60%), 
-    radial-gradient(circle 400px at 60% 10%, rgba(255, 234, 0, 0.2), transparent 60%), #212121;
-    min-height: 100vh;    
+    background: radial-gradient(circle 400px at 43% 15%, rgba(0, 100, 255, 0.2), transparent 60%),
+        radial-gradient(circle 400px at 60% 10%, rgba(255, 234, 0, 0.2), transparent 60%), #212121;
+    min-height: 100vh;
 }
 
 ul {
@@ -31,100 +31,109 @@ a {
 img {
     max-width: 100%;
 }
-.headerCont{
+
+.headerCont {
     width: 100vw;
     height: 10vh;
 }
-.header{
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px 5%;
 }
-.textCont{
+
+.textCont {
     display: flex;
     gap: 30px;
 }
-.text{
+
+.text {
     color: white;
-    font-weight: 100; //100 a fina, 
+    font-weight: 100; /*100 a fina,*/
 }
-.titleCont{
+
+.titleCont {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100% ;
+    width: 100%;
     height: 50vh;
 }
-.title{
+
+.title {
     color: white;
     font-size: 600%;
     font-weight: 900;
 }
-.conteudoCont{
+
+.conteudoCont {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows:repeat(7, 200px) ;
+    grid-template-rows: repeat(7, 200px);
     gap: 20px;
     padding: 20px;
     border-radius: 5%;
 }
-.conteudo1{
+
+.conteudo1 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-color:#84ADE6;
-    border-radius: 5%;
+    background-color: #84ADE6
+}
 
+.conteudo2 {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+    background-color: #919191
 }
-.conteudo2{
-  grid-column: 3 / 5;
-  grid-row: 1 / 2;
-  background-color: #919191;
-  border-radius: 5%;
-}
-.conteudo3{
-    grid-column-start: 1 ;
-    grid-column-end:2 ;
+
+.conteudo3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 5;
-    background-color: #FFFFFF;
-    border-radius: 5%;
-
+    background-color: #FFFFFF
 }
-.conteudo4{
+
+.conteudo4 {
     grid-column-start: 2;
-    grid-column-end:3 ;
+    grid-column-end: 3;
     grid-row-start: 3;
-    grid-row-end:5;
-    background-color: #233D7F;
-    border-radius: 5%;
-
-
-
+    grid-row-end: 5;
+    background-color: #233D7F
 }
-.conteudo5{
+
+.conteudo5 {
     grid-column: 3/ 5;
     grid-row: 2/4;
     background-color: #FFEA00;
-     border-radius: 5%;
-
 }
-.conteudo6{
+
+.conteudo6 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 5;
     grid-row-end: 6;
     background-color: #F9F2AC;
-     border-radius: 5%;
-
 }
-.conteudo7{
+
+.conteudo7 {
     grid-column: 3/ 5;
     grid-row: 4/ 7;
-    background-color:#233D7F ;
-     border-radius: 5%;
-
+    background-color: #233D7F;
 }
 
+.conteudo1,
+.conteudo2,
+.conteudo3,
+.conteudo4,
+.conteudo5,
+.conteudo6,
+.conteudo7 {
+    border-radius: 20px;
+    overflow: hidden; /* garante que nada vaze*/
+}
