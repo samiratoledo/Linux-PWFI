@@ -141,16 +141,30 @@ img {
     overflow: hidden;
 }
 
+.footer {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 60px;
+}
+
+.footer-container {
+    justify-content: end;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
 @media screen and (min-width: 720px) {
     .title {
         color: white;
-        font-size: 55px; /* aumentei para desktop */
+        font-size: 60px;
         font-weight: 900;
     }
 
     .subtitle {
-        font-size: 32px !important; /* aumentei para desktop */
+        font-size: 32px !important;
         font-weight: 700 !important; 
     }
 
