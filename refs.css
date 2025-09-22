@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #212121;
+    background: radial-gradient(circle 400px at 43% 15%, rgba(0, 100, 255, 0.2), transparent 60%),
+        radial-gradient(circle 400px at 60% 10%, rgba(255, 234, 0, 0.2), transparent 60%), #212121;
+    min-height: 100vh;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration-color: #233D7F;
+    color: #233D7F;
+}
+
+img {
+    max-width: 100%;
+}
+
+.headerRefs {
+    width: 100vw;
+    height: 10vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 5%;
+}
+
+.textRefs {
+    display: flex;
+    gap: 30px;
+}
+
+.textRefs a {
+    color: white;
+    font-weight: 100;
+    /*100 a fina*/
+}
+
+.text {
+    color: white;
+    font-weight: 100;
+    /*100 a fina,*/
+}
+
+.titleRefs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+}
+
+.title {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.conteudoRefs p {
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 5%;
+}
+
+.conteudoRefs {
+    gap: 20px;
+    padding: 40px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.ref1,
+.ref8 {
+    background-color: #84ADE6;
+}
+
+.ref2,
+.ref9 {
+    background-color: #919191;
+}
+
+.ref3,
+.ref10 {
+    background-color: #FFFFFF;
+}
+
+.ref3 p,
+.ref10 p,
+.ref5 p,
+.ref12 p,
+.ref6 p {
+    color: #000000;
+}
+
+.ref4,
+.ref11 {
+    background-color: #233D7F;
+}
+
+.ref5,
+.ref12 {
+    background-color: #FFEA00;
+}
+
+.ref6 {
+    background-color: #F9F2AC;
+}
+
+.ref7 {
+    background-color: #233D7F;
+}
+
+.ref1,
+.ref2,
+.ref3,
+.ref4,
+.ref5,
+.ref6,
+.ref7,
+.ref8,
+.ref9,
+.ref10,
+.ref11,
+.ref12 {
+    min-height: 150px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.footer {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 60px;
+}
+
+.footer-container {
+    justify-content: end;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 720px) {
+    .title {
+        color: white;
+        font-size: 60px;
+        font-weight: 900;
+    }
+
+    .subtitle {
+        font-size: 32px !important;
+        font-weight: 700 !important;
+    }
+
+    .conteudoRefs div{
+        max-width: 80%;
+        margin: 20px auto;
+        padding: 35px 30px 35px 30px;
+    }
+
+    .conteudoRefs .titulo{
+        font-weight: 900;
+        text-align: center;
+        padding-bottom: 2%;
+        font-size: 120%;
+    }
+
+    .ref1, .ref7 {
+        background-color: #84ADE6;
+    }
+
+    .ref2, .ref8 {
+        background-color: #FFEA00;
+    }
+
+    .ref3, .ref9 {
+        background-color: #FFFFFF;
+    }
+
+    .ref4, .ref10 {
+
+        background-color: #233D7F;
+    }
+
+    .ref5, .ref11 {
+        background-color: #919191;
+    }
+
+    .ref6, .ref12 {
+        background-color: #F9F2AC;
+    }
+
+    .ref1,
+    .ref2,
+    .ref3,
+    .ref4,
+    .ref5,
+    .ref6,
+    .ref7,
+    .ref8,
+    .ref9,
+    .ref10,
+    .ref11,
+    .ref12 {
+        min-height: 150px;
+        height: auto;
+        width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+}
