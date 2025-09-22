@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #212121;
+    background: radial-gradient(circle 400px at 43% 15%, rgba(0, 100, 255, 0.2), transparent 60%),
+        radial-gradient(circle 400px at 60% 10%, rgba(255, 234, 0, 0.2), transparent 60%), #212121;
+    min-height: 100vh;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.headerCont {
+    width: 100vw;
+    height: 10vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 5%;
+}
+
+.textCont {
+    display: flex;
+    gap: 30px;
+}
+
+.text {
+    color: white;
+    font-weight: 100;
+}
+
+.titleCont {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    min-height: 50vh;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.title {
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    margin: auto 0;
+}
+
+.subtitle {
+    font-size: 25px !important;
+    font-weight: 700 !important;
+    margin-bottom: 5px;
+    padding: 20px 20px 0 20px;
+    /* Ajuste no padding para a parte superior */
+}
+
+.conteudoCont p {
+    font-size: 20px;
+    font-weight: 200;
+    padding: 20px 20px 20px 20px;
+    /* Ajuste no padding para a parte inferior e laterais */
+    line-height: 1.2;
+    word-wrap: break-word;
+    /* Garante que palavras longas quebrem de linha */
+    overflow-wrap: break-word;
+    /* Compatibilidade com outros navegadores */
+}
+
+.conteudoCont {
+    gap: 20px;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+}
+
+/* Regras de estilo para as divs */
+.conteudo1,
+.conteudo3,
+.conteudo5,
+.conteudo7,
+.conteudo9,
+.conteudo11,
+.conteudo13,
+.conteudo15,
+.conteudo17 {
+    background-color: #84ADE6;
+    color: #212121;
+}
+
+.conteudo2,
+.conteudo4,
+.conteudo6,
+.conteudo8,
+.conteudo10,
+.conteudo12,
+.conteudo14,
+.conteudo16,
+.conteudo18 {
+    background-color: #919191;
+    color: #233D7F;
+}
+
+.conteudo3,
+.conteudo10 {
+    background-color: #FFFFFF;
+    color: #233D7F;
+}
+
+.conteudo4,
+.conteudo7,
+.conteudo11,
+.conteudo14 {
+    background-color: #233D7F;
+    color: #FFFFFF;
+}
+
+.conteudo5,
+.conteudo12 {
+    background-color: #FFEA00;
+    color: #233D7F;
+}
+
+.conteudo6 {
+    background-color: #F9F2AC;
+    color: #233D7F;
+}
+
+.conteudo13 {
+    background-color: #84ADE6;
+    color: #212121;
+}
+
+.conteudo14 {
+    background-color: #919191;
+    color: #233D7F;
+}
+
+.conteudo15 {
+    background-color: #FFFFFF;
+    color: #233D7F;
+}
+
+.conteudo16 {
+    background-color: #233D7F;
+    color: #FFFFFF;
+}
+
+.conteudo17 {
+    background-color: #FFEA00;
+    color: #233D7F;
+}
+
+.conteudo18 {
+    background-color: #F9F2AC;
+    color: #233D7F;
+}
+
+.conteudo1,
+.conteudo2,
+.conteudo3,
+.conteudo4,
+.conteudo5,
+.conteudo6,
+.conteudo7,
+.conteudo8,
+.conteudo9,
+.conteudo10,
+.conteudo11,
+.conteudo12,
+.conteudo13,
+.conteudo14,
+.conteudo15,
+.conteudo16,
+.conteudo17,
+.conteudo18 {
+    min-height: 150px;
+    width: 45%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Alinha o conteúdo ao topo para melhor ajuste */
+}
+
+.footer {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 60px;
+}
+
+.footer-container {
+    justify-content: end;
+    max-width: 800px;
+    margin: 0 auto;
+}
