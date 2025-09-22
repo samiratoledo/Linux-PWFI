@@ -1,3 +1,5 @@
+/* reset css */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -32,6 +34,8 @@ img {
     max-width: 100%;
 }
 
+/* nosso codigo */
+
 .headerCont {
     width: 100vw;
     height: 10vh;
@@ -47,6 +51,12 @@ img {
 .textCont {
     display: flex;
     gap: 30px;
+}
+
+.textCont a {
+    color: white;
+    font-weight: 100;
+    /*100 a fina*/
 }
 
 .text {
@@ -79,6 +89,7 @@ img {
     font-size: 20px;
     font-weight: 200;
     padding: 5%;
+    margin-bottom: -7%;
 }
 
 .conteudoCont {
@@ -88,7 +99,69 @@ img {
     display: flex;
     flex-direction: column;
     align-self: center;
+    cursor: pointer;
 }
+
+/* interatividade */
+
+.conteudoCont > div {
+    border-radius: 5%;
+    cursor: pointer;
+    position: relative;
+    transition: .5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    opacity: 0.85;
+}
+
+.conteudoCont > div:not(.active) {
+    transform: scale(1);
+}
+.conteudoCont:has(.active) > div:not(.active) {
+    transform: scale(0.9);
+    opacity: 0.5;
+    filter: blur(10px);
+}
+.conteudoCont > div.active {
+    width: 200%;
+    max-width: 80%; 
+    transform: scale(1.05);
+    max-width: 900px;
+    margin: 0px;
+    border-radius: 20px;
+    opacity: 1;
+    z-index: 10;
+    pointer-events: auto;
+    left: 4%;
+    height: auto;
+    min-height: 110%;
+    transform: none;
+    overflow: visible;
+}
+
+.conteudo2.active,
+.conteudo5.active,
+.conteudo7.active,
+.conteudo11.active,
+.conteudo12.active {
+    transform: scale(1.05) translateX(-50%);
+    left: -98% !important;
+}
+
+/* texto escondido */
+
+.textoEscondido {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.conteudoCont > div.active .textoEscondido {
+  opacity: 1;
+  max-height: 50000000000px; /* ou auto se quiser que se ajuste ao conteúdo */
+  transition: all 0.4s ease;
+}
+
+/* personalização de cada card */
 
 .conteudo1,
 .conteudo8 {
@@ -123,6 +196,14 @@ img {
     background-color: #233D7F;
 }
 
+.conteudo3 p,
+.conteudo10 p,
+.conteudo5 p,
+.conteudo12 p,
+.conteudo6 p {
+    color: #000000;
+}
+
 .conteudo1,
 .conteudo2,
 .conteudo3,
@@ -139,6 +220,8 @@ img {
     width: 100%;
     border-radius: 20px;
 }
+
+/* rodapé */
 
 .footer {
     background-color: #1a1a1a;
