@@ -55,7 +55,8 @@ img {
 
 .text {
     color: white;
-    font-weight: 100;
+    font-size: 40px;
+    font-weight: 900;
 }
 
 .titleCont {
@@ -228,3 +229,4 @@ img {
     max-width: 800px;
     margin: 0 auto;
 }
+
