@@ -89,10 +89,10 @@ img {
     font-size: 20px;
     font-weight: 200;
     padding: 5%;
-    margin-bottom: -7%;
 }
 
 .conteudoCont {
+    position: relative;
     gap: 20px;
     padding: 40px;
     border-radius: 5%;
@@ -100,66 +100,39 @@ img {
     flex-direction: column;
     align-self: center;
     cursor: pointer;
+    margin: 50px 2% 20px 2%;
 }
 
 /* interatividade */
 
-.conteudoCont > div {
-    border-radius: 5%;
-    cursor: pointer;
-    position: relative;
-    transition: .5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-    opacity: 0.85;
+.conteudoCont>div {
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.5s ease;
 }
 
-.conteudoCont > div:not(.active) {
-    transform: scale(1);
-}
-.conteudoCont:has(.active) > div:not(.active) {
-    transform: scale(0.9);
-    opacity: 0.5;
-    filter: blur(10px);
-}
-.conteudoCont > div.active {
-    width: 200%;
-    max-width: 80%; 
-    transform: scale(1.05);
-    max-width: 900px;
-    margin: 0px;
-    border-radius: 20px;
-    opacity: 1;
-    z-index: 10;
-    pointer-events: auto;
-    left: 4%;
-    height: auto;
-    min-height: 110%;
-    transform: none;
-    overflow: visible;
+.conteudoCont>div.active {
+    max-height: 10000000000px;
+    /* ou algo bem maior que o conteúdo interno */
+    padding-bottom: 20px;
 }
 
-.conteudo2.active,
-.conteudo5.active,
-.conteudo7.active,
-.conteudo11.active,
-.conteudo12.active {
-    transform: scale(1.05) translateX(-50%);
-    left: -98% !important;
-}
 
 /* texto escondido */
 
 .textoEscondido {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.4s ease;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease 0.2s;
+    margin-top: -7%;
 }
 
-.conteudoCont > div.active .textoEscondido {
-  opacity: 1;
-  max-height: 50000000000px; /* ou auto se quiser que se ajuste ao conteúdo */
-  transition: all 0.4s ease;
+.conteudoCont>div.active .textoEscondido {
+    opacity: 1;
+    max-height: 50000000000px;
+    transition: all 0.4s ease;
 }
+
 
 /* personalização de cada card */
 
@@ -252,7 +225,7 @@ img {
 
     .conteudoCont {
         display: grid;
-        grid-template-columns: repeat(4, 1fr); 
+        grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: auto;
         gap: 20px;
         padding: 20px;
@@ -261,13 +234,15 @@ img {
 
     /* ----- Linha 1 ----- */
     .conteudo1 {
-        grid-column: 1 / 3;  /* colunas 1 e 2 */
+        grid-column: 1 / 3;
+        /* colunas 1 e 2 */
         grid-row: 1;
         background-color: #84ADE6;
     }
 
     .conteudo2 {
-        grid-column: 3 / 5;  /* colunas 3 e 4 */
+        grid-column: 3 / 5;
+        /* colunas 3 e 4 */
         grid-row: 1;
         background-color: #919191;
     }
@@ -334,6 +309,50 @@ img {
         grid-column: 3 / 5;
         grid-row: 5;
         background-color: #FFEA00;
+    }
+
+    /* interatividade */
+
+    .conteudoCont>div {
+        cursor: pointer;
+        position: relative;
+        transition: .5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+        opacity: 0.85;
+    }
+
+    .conteudoCont>div:not(.active) {
+        transform: scale(1);
+    }
+
+    .conteudoCont:has(.active)>div:not(.active) {
+        transform: scale(0.9);
+        opacity: 0.5;
+        filter: blur(10px);
+    }
+
+    .conteudoCont>div.active {
+        position: absolute;
+        width: 200%;
+        transform: scale(1.05);
+        max-width: 900px;
+        border-radius: 20px;
+        opacity: 1;
+        z-index: 10;
+        left: 4%;
+        height: auto;
+    }
+
+    .conteudo11.active {
+        transform: scale(1.05) translateX(-50%);
+        left: -105% !important;
+    }
+
+    .conteudo2.active,
+    .conteudo5.active,
+    .conteudo7.active,
+    .conteudo12.active {
+        transform: scale(1.05) translateX(-50%);
+        left: -42% !important;
     }
 
     .conteudo1,
