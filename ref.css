@@ -49,6 +49,10 @@ img {
     gap: 30px;
 }
 
+.textCont a {
+    color: #919191;
+}
+
 .text {
     color: white;
     font-weight: 100;
