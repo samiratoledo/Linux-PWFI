@@ -53,12 +53,6 @@ img {
     color: #919191;
 }
 
-.text {
-    color: white;
-    font-size: 40px;
-    font-weight: 900;
-}
-
 .titleCont {
     display: flex;
     flex-direction: column-reverse;
@@ -229,4 +223,5 @@ img {
     max-width: 800px;
     margin: 0 auto;
 }
+
 
