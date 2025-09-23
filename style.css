@@ -104,6 +104,10 @@ img {
     font-weight: 700 !important;
 }
 
+span {
+    font-weight: 700 !important;
+}
+
 .conteudoCont p {
     color: white;
     font-size: 20px;
@@ -394,3 +398,4 @@ img {
         overflow: hidden;
     }
 }
+
