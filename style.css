@@ -91,6 +91,12 @@ img {
     align-items: center;
     width: 100%;
     height: 50vh;
+    gap: 10px;
+}
+
+.titleCont img {
+    width: auto;
+    height: 50px;
 }
 
 .title {
@@ -397,6 +403,9 @@ span {
         border-radius: 20px;
         overflow: hidden;
     }
-}
 
+.titleCont img {
+    height: 80px;
+}
+}
 
