@@ -221,7 +221,7 @@ span {
 /* rodapé */
 
 .footer {
-    background-color: #1a1a1a;
+    background-color: transparent;
     color: #f1f1f1;
     text-align: center;
     padding: 20px;
@@ -398,4 +398,5 @@ span {
         overflow: hidden;
     }
 }
+
 
