@@ -231,7 +231,7 @@ img {
 }
 
 .footer {
-    background-color: #1a1a1a;
+    background-color: transparent;
     color: #f1f1f1;
     text-align: center;
     padding: 20px;
@@ -244,4 +244,5 @@ img {
     max-width: 800px;
     margin: 0 auto;
 }
+
 
