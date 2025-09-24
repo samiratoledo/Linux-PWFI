@@ -32,9 +32,17 @@ a {
 
 img {
     max-width: 100%;
+    width: 800px;
+    border-radius: 40px;
 }
 
 /* nosso codigo */
+
+p {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 .headerCont {
     width: 100vw;
@@ -142,7 +150,6 @@ span {
 
 .conteudoCont>div.active {
     max-height: 10000000000px;
-    /* ou algo bem maior que o conteúdo interno */
     padding-bottom: 20px;
 }
 
