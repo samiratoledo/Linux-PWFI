@@ -13,11 +13,17 @@ document.querySelectorAll(".conteudoCont > div").forEach(item => {
     item.addEventListener("click", function(event) {
         event.stopPropagation();
         
-        // remove a classe 'ctive' de todos os grids
+        // verifica se o card clicado JÁ ESTÁ ATIVO
+        const isAlreadyActive = this.classList.contains("active");
+        
+        // remove a classe 'active' de todos os grids
         document.querySelectorAll(".conteudoCont > div")
             .forEach(div => div.classList.remove("active"));
         
-        // adiciona a classe 'active' apenas no grid clicado
-        this.classList.add("active");
+        // se NÃO estava ativo, ativa o card clicado
+        if (!isAlreadyActive) {
+            this.classList.add("active");
+        }
+        // se já estava ativo, não adiciona a classe (fica fechado)
     });
 });
