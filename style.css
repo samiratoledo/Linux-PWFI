@@ -61,19 +61,23 @@ p {
   color: white;
 }
 
+/* sublinhado no header */
+
+/* para quando nao estiver ativo (sem o cursor em cima) */
 .header a::after {
-  content: "";
+  content: ""; /* para ser apenas o sublinhado */
   position: absolute;
-  left: 0;
+  left: 0; /* para ficar em baixo do texto */
   bottom: -2px;
-  width: 0;
-  height: 1px;
+  width: 0; /* esconde o sublinhado */
+  height: 1px; /* espessura da linha */
   background: white;
   transition: width 0.3s ease;
 }
 
+/* ativa */
 .header a:hover::after {
-  width: 100%;
+  width: 100%; /* mostra o sublinhado */
 }
 
 .textCont {
@@ -418,5 +422,6 @@ span {
     height: 80px;
 }
 }
+
 
 
