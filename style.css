@@ -90,7 +90,7 @@ p {
 .text {
     color: white;
     font-weight: 100;
-    /*100 a fina,*/
+    /*100 a fina*/
 }
 
 .titleCont {
@@ -119,7 +119,7 @@ p {
 }
 
 span {
-    font-weight: 700 !important;
+    font-weight: 700 !important; /* deixa em negrito */
 }
 
 .conteudoCont p {
@@ -149,24 +149,26 @@ span {
 }
 
 .conteudoCont>div.active {
-    max-height: 10000000000px;
+    max-height: 10000000000px; /* para a div alcançar o texto */
     padding-bottom: 20px;
 }
 
 
 /* texto escondido */
 
+/* texto escondido por padrão */
 .textoEscondido {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
     transition: opacity 0.3s ease 0.2s;
-    margin-top: -7%;
+    margin-top: -7%; /* para alcançar o paragrafo de cima */
 }
 
+/* texto aparece quando a função da div (active) for ativada */
 .conteudoCont>div.active .textoEscondido {
     opacity: 1;
-    max-height: 50000000000px;
+    max-height: 50000000000px; /* para o texto poder aumentar livremente */
     transition: all 0.4s ease;
 }
 
@@ -369,12 +371,12 @@ span {
 
     .conteudoCont>div.active {
         position: absolute;
-        width: 200%;
+        width: 200%; /* aumenta o card */
         transform: scale(1.05);
-        max-width: 900px;
+        max-width: 900px; /* limite para nao vazar do body */
         border-radius: 20px;
         opacity: 1;
-        z-index: 10;
+        z-index: 10; /* sobrepõe tudo */
         left: 4%;
         height: auto;
     }
@@ -384,6 +386,7 @@ span {
         left: -105% !important;
     }
 
+    /* para os cards da direita nao vazar da tela */
     .conteudo2.active,
     .conteudo5.active,
     .conteudo7.active,
@@ -415,4 +418,5 @@ span {
     height: 80px;
 }
 }
+
 
