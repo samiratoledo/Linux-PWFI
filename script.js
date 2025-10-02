@@ -1,4 +1,6 @@
 document.addEventListener("click", function(event) {
+
+    // verifica se o clique foi dentro de algum card
     const isClickInsideGrid = event.target.closest(".conteudoCont > div");
     
     // se o clique NÃO foi dentro de um dos grids
@@ -27,3 +29,4 @@ document.querySelectorAll(".conteudoCont > div").forEach(item => {
         // se já estava ativo, não adiciona a classe (fica fechado)
     });
 });
+
